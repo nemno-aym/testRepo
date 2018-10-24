@@ -23,5 +23,10 @@ class TestProjectForCITestingTests: XCTestCase {
         
         XCTAssertEqual(number, integerValueOfString)
     }
+    
+    func testWhatSupposeToFail() {
+        XCTAssertEqual(1, 2)
+
+    }
 
 }
