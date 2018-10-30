@@ -11,9 +11,9 @@ then
 curl \
 -F "status=2" \
 -F "notify=1" \
--F "ipa=@TestProjectForCITesting.ipa" \
+-F "ipa=@$APPCENTER_OUTPUT_DIRECTORY/TestProjectForCITesting.ipa" \
 -H "X-HockeyAppToken: $HOCKEYAPP_API_TOKEN" \
-https://rink.hockeyapp.net/api/2/apps/$HOCKEYAPP_APP_ID/app_versions/upload
+https://rink.hockeyapp.net/api/2/apps/"$HOCKEYAPP_APP_ID"/app_versions/upload
 else
 echo "Current branch is $APPCENTER_BRANCH"
 fi
