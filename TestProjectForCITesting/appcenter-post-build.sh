@@ -3,7 +3,7 @@
 echo "deploy to HockeyApp"
 
 HOCKEYAPP_API_TOKEN={"bcf30a6a2e74429db9f6209975435367"}
-HOCKEYAPP_APP_ID={"com.app.pampers-us-aym-llc"}
+HOCKEYAPP_APP_ID={"1d2efae813e84184a1736209867059cac"}
 
 # Example: Upload master branch app binary to HockeyApp using the API
 if [ "$APPCENTER_BRANCH" == "master" ];
